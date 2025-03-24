@@ -34,10 +34,10 @@ for (let i = 0; i < path_images.length; i++) {
   slider.innerHTML += `<div class="slider-item-container"><div class="slider-item" style="background-image: url(${path_images[i]})"></div></div>`;
 }
 
-const sliderItems = document.querySelectorAll('.slider-item-container');
-const singleSlideWidth = sliderItems[0].clientWidth;
+const sliderItemsContainers = document.querySelectorAll('.slider-item-container');
+const singleSlideWidth = sliderItemsContainers[0].clientWidth;
 
-const totalSlides = sliderItems.length;
+const totalSlides = sliderItemsContainers.length;
 const slidesPerPage = Math.floor(slider.clientWidth / singleSlideWidth);
 const totalPages = Math.ceil(totalSlides / slidesPerPage);
 

@@ -65,7 +65,6 @@ button {
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
   width: 900px;
 
   .slider-item-container {
